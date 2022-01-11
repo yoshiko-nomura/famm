@@ -39,8 +39,12 @@ article {
   max-width: 1400px;
 }
 
-ul li a {
-  font-weight: 700;
+ul {
+  li {
+    a {
+      font-weight: 700;
+    }
+  }
 }
 
 a {
@@ -53,8 +57,7 @@ a {
 
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-size: 30pt;
   font-weight: 700;
   color: var(--color-brown);
@@ -66,4 +69,3 @@ p {
   font-weight: 400;
   color: var(--color-brown);
 }
-/*# sourceMappingURL=common.css.map */
