@@ -17,15 +17,23 @@ header .container {
   width: 100%;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .container h1 a {
+  min-width: 100px;
+  width: 100%;
+}
+
+header .container nav {
   max-width: 960px;
   width: 100%;
 }
 
-header ul li {
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container nav ul li {
   margin-right: 17px;
   max-width: calc(960px / 7);
   width: 100%;
@@ -34,7 +42,7 @@ header ul li {
   background-color: var(--color-white);
 }
 
-header ul li a {
+header .container nav ul li a {
   padding: 10px 0;
   width: 100%;
   white-space: nowrap;
@@ -42,23 +50,23 @@ header ul li a {
   color: var(--color-gray);
 }
 
-header ul li a:focus {
+header .container nav ul li a:focus {
   border-radius: 12px;
   background-color: var(--color-red);
   color: var(--color-white);
 }
 
-header ul li:last-child {
+header .container nav ul li:last-child {
   margin-right: 0;
 }
 
-header ul li:hover,
-header ul li.current {
+header .container nav ul li:hover,
+header .container nav ul li.current {
   background-color: var(--color-red);
 }
 
-header ul li:hover a,
-header ul li.current a {
+header .container nav ul li:hover a,
+header .container nav ul li.current a {
   color: var(--color-white);
 }
 
@@ -219,7 +227,7 @@ footer {
   background-color: var(--color-light-brown);
 }
 
-footer ul {
+footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,25 +241,28 @@ footer ul {
   text-align: center;
 }
 
-footer ul li {
+footer nav ul li {
   white-space: nowrap;
 }
 
-footer ul li a {
+footer nav ul li a {
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-footer ul li a:hover {
-  color: var(--color-red);
+footer nav ul li a:hover {
+  color: black;
+  background-color: yellow;
 }
 
-footer ul li a:focus {
+footer nav ul li a:focus {
+  color: black;
+  background-color: yellow;
   font-size: 16pt;
 }
 
-footer small {
+footer nav small {
   display: block;
   margin: 110px auto 120px;
   text-align: center;
