@@ -161,12 +161,12 @@ footer ul {
 
       &:focus {
         color: var(--color-white);
-        background: var(--color-red);
+        background: red;
       }
 
       &:hover {
         color: var(--color-white);
-        background: var(--color-red);
+        background: red;
       }
     }
   }

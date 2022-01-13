@@ -184,12 +184,12 @@ footer ul {
 
 .request .box a:focus {
   color: var(--color-white);
-  background: var(--color-red);
+  background: red;
 }
 
 .request .box a:hover {
   color: var(--color-white);
-  background: var(--color-red);
+  background: red;
 }
 
 .request .button {
