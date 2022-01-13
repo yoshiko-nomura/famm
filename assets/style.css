@@ -192,7 +192,16 @@ footer ul {
   background: var(--color-red);
 }
 
-.request button {
+.request .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   right: 40px;
   bottom: 40px;
@@ -202,19 +211,18 @@ footer ul {
   color: var(--color-white);
   background: -webkit-gradient(linear, left top, right bottom, from(#7bc65f), to(#31b1b4));
   background: linear-gradient(to right bottom, #7bc65f, #31b1b4);
-  text-align: center;
   line-height: 1.3;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 5px 5px 9px -5px rgba(171, 171, 171, 0.8);
           box-shadow: 5px 5px 9px -5px rgba(171, 171, 171, 0.8);
 }
 
-.request button:hover {
+.request .button:hover {
   width: 140px;
   height: 140px;
 }
 
-.request button:focus {
+.request .button:focus {
   width: 140px;
   height: 140px;
   background: lightgreen;
