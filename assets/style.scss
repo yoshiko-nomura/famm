@@ -124,6 +124,12 @@ article {
   }
 }
 
+.request .box,
+footer ul {
+  max-width: 1058px;
+  width: 100%;
+}
+
 .request {
   margin-top: 120px;
   text-align: center;
@@ -132,8 +138,6 @@ article {
     display: flex;
     justify-content: space-between;
     margin: 80px auto 120px;
-    max-width: 1058px;
-    width: 100%;
 
     a {
       width: calc((100% - 40px) / 2);
@@ -145,6 +149,16 @@ article {
       border-radius: 30px;
       border: 1px solid var(--color-brown);
       background: linear-gradient(to right, #ff9696, #fff7f1);
+
+      &:focus {
+        color: var(--color-white);
+        background: var(--color-red);
+      }
+
+      &:hover {
+        color: var(--color-white);
+        background: var(--color-red);
+      }
     }
   }
 
@@ -161,10 +175,55 @@ article {
     line-height: 1.3;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 5px 9px -5px rgba(171, 171, 171, 0.8);
+
+    &:hover {
+      width: 140px;
+      height: 140px;
+    }
+
+    &:focus {
+      width: 140px;
+      height: 140px;
+      background: lightgreen;
+      color: black;
+    }
   }
 }
 
 footer {
+  // aクリック範囲を10px広めているため120-10で110px
+  padding: 110px 0 40px;
   color: var(--color-white);
   background-color: var(--color-light-brown);
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+
+    li {
+      white-space: nowrap;
+
+      a {
+        padding: 10px;
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--color-red);
+        }
+
+        &:focus {
+          font-size: 16pt;
+        }
+      }
+    }
+  }
+
+  small {
+    display: block;
+    margin: 110px auto 120px;
+    text-align: center;
+  }
 }
